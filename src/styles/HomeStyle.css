@@ -155,7 +155,7 @@ span {
     .home {
         flex-direction: column;
         align-items: center;
-        gap: 4rem;
+        gap: 5px;
         padding: 5rem 4%;
     }
 
@@ -197,6 +197,7 @@ span {
     .btn {
         padding: 1rem 2rem;
         font-size: 1.4rem;
+        margin-left: 95px;
     }
 }
 
@@ -222,5 +223,6 @@ span {
     .btn {
         padding: 0.8rem 1.8rem;
         font-size: 1.3rem;
+        margin-left: 95px;
     }
 }
