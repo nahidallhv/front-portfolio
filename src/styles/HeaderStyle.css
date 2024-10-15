@@ -1,16 +1,15 @@
+
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 1rem 9%;
-  background-color: transparent;
-  filter: drop-shadow(10px);
+  background-color: #0d022a;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  background-color: #0d022a;
   height: 12vh;
 }
 
@@ -24,6 +23,35 @@ header {
 
 .logo:hover {
   transform: scale(1.1);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 0.4rem;
+  z-index: 150;
+  transition: 0.3s ease;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background-color: #00bfff;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 nav a {
@@ -44,32 +72,29 @@ nav a.active {
 @media (max-width: 995px) {
   nav {
     position: absolute;
-    display: none;
-    top: 0;
-    right: 0;
+    top: 12vh;
+    right: 9%;
     width: 40%;
-    border-left: 3px solid #00bfff;
-    border-bottom: 3px solid #00bfff;
-    border-bottom-left-radius: 2rem;
-    padding: 1rem solid;
+    display: none;
+    flex-direction: column;
+    align-items: center;
     background-color: #161616;
-    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    border-left: 3px solid #00bfff;
+    border-bottom-left-radius: 2rem;
+    padding: 2rem;
   }
 
   nav.active {
-    display: block;
+    display: flex;
   }
 
   nav a {
-    display: block;
     font-size: 2rem;
-    margin: 3rem 0;
+    margin: 1.5rem 0;
+    text-align: center;
   }
 
-  nav a:hover,
-  nav a.active {
-    padding: 1rem;
-    border-radius: 0.5rem;
-    border-bottom: 0.5rem solid #00bfff;
+  .hamburger {
+    display: flex;
   }
 }

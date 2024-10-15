@@ -1,226 +1,214 @@
-/* Genel Ayarlar */
 section {
-    min-height: 100vh;
-    padding: 5rem 9%;
-    box-sizing: border-box;
-    overflow: hidden;
+  min-height: 100vh;
+  padding: 5rem 9%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-/* Ana Bölüm */
 .home {
-    display: flex;
-    align-items: center;
-    gap: 17rem;
-    background-color: #0d022a;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 17rem;
+  background-color: #0d022a;
+  margin: 0 auto;
 }
 
-/* Başlık Ayarları */
 .home .home-content h1 {
-    font-size: 6rem;
-    font-weight: 700;
-    line-height: 1.3;
-    color: #fff;
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #fff;
 }
 
 span {
-    color: #00bfff;
+  color: #00bfff;
 }
 
 .home-content h3 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-    text-align: left;
-    color: #fff;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-align: left;
+  color: #fff;
 }
 
 .home-content p {
-    font-size: 1.8rem;
-    color: #ddd;
-    text-align: justify;
-    max-width: 700px;
+  font-size: 1.8rem;
+  color: #ddd;
+  text-align: justify;
+  max-width: 700px;
 }
 
-/* Resim Ayarları */
 .home-img {
-    border-radius: 15%;
+  border-radius: 15%;
 }
 
 .home-img img {
-    width: 25vw;
-    border-radius: 15%;
-    /* box-shadow: 0 0 25px #00bfff; */
-    cursor: pointer;
-    transition: transform 0.2s linear;
+  width: 25vw;
+  border-radius: 15%;
+  cursor: pointer;
+  transition: transform 0.2s linear;
 }
 
 .home-img img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-/* Sosyal İkonlar */
 .social-icons {
-    display: flex;
-    gap: 1.5rem;
-    margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .social-icons a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    border: 0.2rem solid #00bfff;
-    color: #00bfff;
-    font-size: 2rem;
-    transition: 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 0.2rem solid #00bfff;
+  color: #00bfff;
+  font-size: 2rem;
+  transition: 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: #0d022a;
-    background-color: #00bfff;
-    transform: scale(1.3) translateY(-5px);
-    box-shadow: 0 0 25px #00bfff;
+  color: #0d022a;
+  background-color: #00bfff;
+  transform: scale(1.3) translateY(-5px);
+  box-shadow: 0 0 25px #00bfff;
 }
 
-/* Buton Ayarları */
 .btn {
-    padding: 1rem 2.8rem;
-    border-radius: 4rem;
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: #00bfff;
-    background-color: #0d022a;
-    border: 2px solid #00bfff;
-    cursor: pointer;
-    transition: 0.3s ease;
-    margin-top: 2rem;
+  padding: 1rem 2.8rem;
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #00bfff;
+  background-color: #0d022a;
+  border: 2px solid #00bfff;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 2rem;
 }
 
 .btn:hover {
-    background-color: #00bfff;
-    color: #0d022a;
-    transform: scale(1.05);
-    box-shadow: 0 0 25px #00bfff;
+  background-color: #00bfff;
+  color: #0d022a;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00bfff;
 }
 
-/* Yazı Efektleri */
 .typing-text {
-    font-size: 3.4rem;
-    font-weight: 600;
-    color: #00bfff;
-    position: relative;
-    min-width: 280px;
-    text-align: center;
+  font-size: 3.4rem;
+  font-weight: 600;
+  color: #00bfff;
+  position: relative;
+  min-width: 280px;
+  text-align: center;
 }
 
 .typing-text span::before {
-    content: "Web Developer";
-    animation: words 10s infinite;
+  content: "Web Developer";
+  animation: words 10s infinite;
 }
 
 .typing-text span::after {
-    content: "";
-    position: absolute;
-    width: 3px;
-    height: 100%;
-    background-color: #00bfff;
-    right: -8px;
-    animation: cursor 0.6s steps(1) infinite;
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background-color: #00bfff;
+  right: -8px;
+  animation: cursor 0.6s steps(1) infinite;
 }
 
-/* Animasyonlar */
 @keyframes cursor {
-    50% {
-        opacity: 0;
-    }
+  50% {
+    opacity: 0;
+  }
 }
 
 @keyframes words {
-    0%, 50% {
-        content: "Web Developer";
-    }
-    50%, 100% {
-        content: "Frontend Developer";
-    }
+  0%,
+  50% {
+    content: "Web Developer";
+  }
+  50%,
+  100% {
+    content: "Frontend Developer";
+  }
 }
 
-/* Ekran Boyutlarına Göre Ayarlar */
-
-/* Tablet ve Küçük Masaüstü */
 @media (max-width: 995px) {
-    .home {
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-        padding: 5rem 4%;
-    }
+  .home {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 5rem 4%;
+  }
 
-    .home .home-content h1 {
-        font-size: 4.5rem;
-    }
+  .home .home-content h1 {
+    font-size: 4.5rem;
+  }
 
-    .home-content h3 {
-        font-size: 2.8rem;
-    }
+  .home-content h3 {
+    font-size: 2.8rem;
+  }
 
-    .home-img img {
-        width: 50vw;
-        margin-top: 2rem;
-    }
+  .home-img img {
+    width: 50vw;
+    margin-top: 2rem;
+  }
 }
 
-/* Telefonlar ve Küçük Tabletler */
 @media (max-width: 768px) {
-    .home-content h1 {
-        font-size: 4rem;
-        text-align: center;
-    }
+  .home-content h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
 
-    .home-content h3 {
-        font-size: 2.5rem;
-    }
+  .home-content h3 {
+    font-size: 2.5rem;
+  }
 
-    .home-content p {
-        font-size: 1.6rem;
-        max-width: 450px;
-    }
+  .home-content p {
+    font-size: 1.6rem;
+    max-width: 450px;
+  }
 
-    .social-icons {
-        justify-content: center;
-        gap: 1rem;
-    }
+  .social-icons {
+    justify-content: center;
+    gap: 1rem;
+  }
 
-    .btn {
-        padding: 1rem 2rem;
-        font-size: 1.4rem;
-    }
+  .btn {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+  }
 }
 
-/* Küçük Telefonlar */
 @media (max-width: 576px) {
-    .home-content h1 {
-        font-size: 3.5rem;
-    }
+  .home-content h1 {
+    font-size: 3.5rem;
+  }
 
-    .home-content h3 {
-        font-size: 2rem;
-        text-align: center;
-    }
+  .home-content h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
 
-    .home-img img {
-        width: 60vw;
-    }
+  .home-img img {
+    width: 60vw;
+  }
 
-    .social-icons {
-        margin-top: 1rem;
-    }
+  .social-icons {
+    margin-top: 1rem;
+  }
 
-    .btn {
-        padding: 0.8rem 1.8rem;
-        font-size: 1.3rem;
-    }
+  .btn {
+    padding: 0.8rem 1.8rem;
+    font-size: 1.3rem;
+  }
 }
