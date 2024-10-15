@@ -19,14 +19,14 @@ function Home() {
           <h3 className="typing-text">
             I'm a <span></span>
           </h3>
-          <p>
+          {/* <p>
             I am a passionate and open to learning frontend developer, I love to
             develop creative projects. Team-oriented, problem-solving and
             determined to take on challenges. I have experience in React and
             JavaScript and design user-friendly, responsive interfaces. My goal
             is to continuously improve myself and take part in innovative
             projects.
-          </p>
+          </p> */}
           <div className="social-icons">
             <a href="https://linkedin.com/in/nahidallhv">
               <i className="fa-brands fa-linkedin"></i>
