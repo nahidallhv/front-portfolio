@@ -191,6 +191,10 @@ span {
 }
 
 @media (max-width: 576px) {
+    .home-content{
+        margin-top: -40px;
+    }
+
   .home-content h1 {
     font-size: 3.5rem;
   }
