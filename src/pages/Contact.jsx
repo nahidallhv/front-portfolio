@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/ContactStyle.css";
 
 function Contact() {
-  const [formData, setFormData] = useState({
+  const [data, setdata] = useState({
     name: "",
     email: "",
     message: "",
@@ -10,7 +10,7 @@ function Contact() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setdata({ ...data, [name]: value });
   };
 
   const handleSubmit = async (e) => {
@@ -23,13 +23,13 @@ function Contact() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(data),
       }
     );
 
     if (response.ok) {
       alert("Message sent successfully!");
-      setFormData({ name: "", email: "", message: "" });
+      setdata({ name: "", email: "", message: "" });
     } else {
       alert("Error sending message.");
     }
@@ -45,7 +45,7 @@ function Contact() {
             type="text"
             id="name"
             name="name"
-            value={formData.name}
+            value={data.name}
             onChange={handleChange}
             required
           />
@@ -56,7 +56,7 @@ function Contact() {
             type="email"
             id="email"
             name="email"
-            value={formData.email}
+            value={data.email}
             onChange={handleChange}
             required
           />
@@ -66,7 +66,7 @@ function Contact() {
           <textarea
             id="message"
             name="message"
-            value={formData.message}
+            value={data.message}
             onChange={handleChange}
             required
           />
