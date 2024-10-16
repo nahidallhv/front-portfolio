@@ -16,7 +16,7 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
   
-    const response = await fetch('https://nahiddallhvv.vercel.app/api/contact/', {
+    const response = await fetch('https://nahiddallhvv.vercel.app/contact/api/contact/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
