@@ -17,7 +17,7 @@ function Contact() {
     e.preventDefault();
 
     const response = await fetch(
-      "https://new-backend-portfolio-d490c06a7d64.herokuapp.com/contact",
+      "https://new-backend-portfolio-d490c06a7d64.herokuapp.com/api/contact",
       {
         method: "POST",
         headers: {

@@ -3,7 +3,7 @@
     { "source": "/(.*)", "destination": "/" },
     {
       "source": "/api/contact",
-      "destination": "https://new-backend-portfolio-d490c06a7d64.herokuapp.com/contact"
+      "destination": "https://new-backend-portfolio-d490c06a7d64.herokuapp.com/api/contact"
     }
   ]
 }
