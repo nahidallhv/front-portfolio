@@ -73,7 +73,7 @@ nav a.active {
   nav {
     position: absolute;
     top: 12vh;
-    right: 9%;
+    right: 0;
     width: 40%;
     display: none;
     flex-direction: column;
