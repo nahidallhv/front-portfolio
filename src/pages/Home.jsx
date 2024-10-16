@@ -7,7 +7,6 @@ import myCv from "../assets/nahidallhvvCV.pdf";
 function Home() {
   return (
     <div>
-      
       <section className="home">
         <div className="home-img">
           <img src={homeImg} alt="nahid-img" />
