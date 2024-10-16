@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/ContactStyle.css";
 
 function Contact() {
-  const [data, setdata] = useState({
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
@@ -10,26 +10,26 @@ function Contact() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setdata({ ...data, [name]: value });
+    setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const response = await fetch(
-      "https://new-backend-portfolio-d490c06a7d64.herokuapp.com/api/contact",
+      "https://new-backend-portfolio-d490c06a7d64.herokuapp.com/api/contact/",
       {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify(formData),
       }
     );
 
     if (response.ok) {
       alert("Message sent successfully!");
-      setdata({ name: "", email: "", message: "" });
+      setFormData({ name: "", email: "", message: "" });
     } else {
       alert("Error sending message.");
     }
@@ -45,7 +45,7 @@ function Contact() {
             type="text"
             id="name"
             name="name"
-            value={data.name}
+            value={formData.name}
             onChange={handleChange}
             required
           />
@@ -56,7 +56,7 @@ function Contact() {
             type="email"
             id="email"
             name="email"
-            value={data.email}
+            value={formData.email}
             onChange={handleChange}
             required
           />
@@ -66,7 +66,7 @@ function Contact() {
           <textarea
             id="message"
             name="message"
-            value={data.message}
+            value={formData.message}
             onChange={handleChange}
             required
           />
