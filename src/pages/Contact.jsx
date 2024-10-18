@@ -15,23 +15,20 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    const response = await fetch(
-      "https://new-backend-portfolio-d490c06a7d64.herokuapp.com/api/contact/",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      }
-    );
-
+  
+    const response = await fetch('http://localhost:8000/api/contact/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+  
     if (response.ok) {
-      alert("Message sent successfully!");
-      setFormData({ name: "", email: "", message: "" });
+      alert('Message sent successfully!');
+      setFormData({ name: "", email: "", message: "" }); 
     } else {
-      alert("Error sending message.");
+      alert('Error sending message.');
     }
   };
 

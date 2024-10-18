@@ -91,3 +91,43 @@
 .education-item:nth-child(2) {
   animation-delay: 0.4s;
 }
+
+@media (max-width: 768px) {
+  .education-container {
+    padding: 1rem 5%;
+    padding-top: 100px;
+  }
+
+  .education-item {
+    flex-direction: column; /* Yataydan dikey düzene geç */
+    align-items: flex-start;
+    margin-bottom: 3rem;
+  }
+
+  .education-year {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+  }
+
+  .education-details {
+    width: 100%; /* Tüm genişliği kapla */
+  }
+}
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .education-details h2 {
+    font-size: 1.8rem;
+  }
+
+  .education-details h3 {
+    font-size: 1.6rem;
+  }
+
+  .education-details p {
+    font-size: 1.4rem;
+  }
+}
