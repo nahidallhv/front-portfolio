@@ -28,7 +28,7 @@
 
 .form-group label {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #00bfff;
   margin-bottom: 0.5rem;
 }
@@ -55,13 +55,13 @@
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 5px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .submit-button:hover {
-  background-color: #0095e1;
+  background-color: #0387c9;
 }
 
 @keyframes fadeIn {

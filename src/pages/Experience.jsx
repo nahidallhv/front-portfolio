@@ -3,6 +3,13 @@ import "../styles/ExperienceStyle.css";
 
 const experienceData = [
   {
+    position: "Frontend developer",
+    company: "MyMentor İnternship and Development Agency",
+    year: "10/2024 - Present",
+    description:
+      "Ability to work with a team and individually in a 40-day marathon with real projects and a real work environment.",
+  },
+  {
     position: "Frontend Instructor",
     company: "Optimal Grup MMC",
     year: "10/2024 - Present",

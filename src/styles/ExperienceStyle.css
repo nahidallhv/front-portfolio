@@ -39,6 +39,9 @@
 .experience-item:nth-child(4) {
   animation-delay: 0.3s;
 }
+.experience-item:nth-child(5) {
+  animation-delay: 0.4s;
+}
 
 .experience-details {
   background-color: rgba(255, 255, 255, 0.1);
@@ -79,5 +82,38 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-container {
+    padding: 1rem 5%;
+    padding-top: 100px;
+  }
+
+  .experience-details {
+    padding: 1rem;
+  }
+
+  .experience-details h2 {
+    font-size: 1.6rem; 
+  }
+
+  .experience-details h3 {
+    font-size: 1.4rem;
+  }
+
+  .experience-year {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .experience-details p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .experience-item {
+    margin-bottom: 1.5rem;
   }
 }
