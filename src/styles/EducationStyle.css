@@ -97,6 +97,15 @@
     padding: 1rem 5%;
     padding-top: 100px;
   }
+  .education-year {
+    padding-left: 20px; /* Sol tarafta boşluk bırak */
+    margin-right: 0; /* Sağdan boşluğu kaldır */
+  }
+
+  .education-year::after {
+    left: 0; /* Sol hizalamayı kaldır */
+    right: 100%; /* Şekli zamanın soluna yerleştir */
+  }
 
   .education-item {
     flex-direction: column; /* Yataydan dikey düzene geç */
